@@ -3,7 +3,6 @@
  * This is the spec file that Jasmine will read and contains
  * all of the tests that will be run against your application.
  */
- 
 /* All tests are within the $() function since some may require DOM 
  * elements. This will ensure they don't run until the DOM is ready.
  */
@@ -58,8 +57,8 @@ $(function() {
 
         /* This test ensures the menu changes visibility when the
          * menu icon is clicked. This test has two expectations: 
-              * 1) Does the menu display when clicked?
-              * 2) Does it hide when clicked again?
+         * 1) Does the menu display when clicked?
+         * 2) Does it hide when clicked again?
          */
 
         it('changes visibility when the menu icon is clicked', function() {
@@ -70,21 +69,21 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toEqual(true);
         });
 
-/*
-        it('changes visibility when the menu icon is clicked', function() {
-            if ($('body').hasClass('menu-hidden')) {
-                menuElement.click();
+        /*
+                it('changes visibility when the menu icon is clicked', function() {
+                    if ($('body').hasClass('menu-hidden')) {
+                        menuElement.click();
 
-                expect($('body').hasClass('menu-hidden')).toBe(false);
-            }
+                        expect($('body').hasClass('menu-hidden')).toBe(false);
+                    }
 
-            if (!$('body').hasClass('menu-hidden')) {
-                menuElement.click();
+                    if (!$('body').hasClass('menu-hidden')) {
+                        menuElement.click();
 
-                expect($('body').hasClass('menu-hidden')).toBe(true);
-            }
-        });
-*/
+                        expect($('body').hasClass('menu-hidden')).toBe(true);
+                    }
+                });
+        */
     });
 
     /* This test suite is named "Initial Entries" */
@@ -116,22 +115,22 @@ $(function() {
         // Here, it loads the feed item in index 1
         beforeEach(function(done) {
             loadFeed(1, function() {
-            oneFeed = $('.feed').html();
-            console.log($('.feed').html());
-            done();
+                oneFeed = $('.feed').html();
+                console.log($('.feed').html());
+                done();
             });
         });
 
         // http://stackoverflow.com/questions/22413009/jasmine-javascript-testing-tobe-vs-toequal   
         // Loads the feed item in index 2
         // By console.logging both feeds we can check that they are not the same
-        it('changes content when loadFeed() loads a new feed', function(done) {	
+        it('changes content when loadFeed() loads a new feed', function(done) {
             loadFeed(2, function() {
-            console.log($('.feed').html());
-            expect(oneFeed).not.toEqual($('.feed').html());
-            done();
+                console.log($('.feed').html());
+                expect(oneFeed).not.toEqual($('.feed').html());
+                done();
+            });
         });
     });
-});
-        
+
 }());
