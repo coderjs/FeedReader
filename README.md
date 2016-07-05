@@ -5,7 +5,9 @@ The file has incomplete or missing Jasmime tests scripts written.
 The objective for students was to complete or compose new test suites. 
 
 # How to Run the Application
-You can open the browser and inspect the Jasmine results (at the bottom) by clicking this link: http://coderjs.github.io/FeedReader
+You can click this link (http://coderjs.github.io/FeedReader) to open a browser window and inspect the Jasmine results (at the bottom).
+Or, you can download this guthub repository (https://github.com/coderjs/FeedReader) to your local machine and run "index.html" in a browser. 
+To specifically inspect the jasmine tests written for this project, open the file "/jasmine/spec/feedreader.js" in a text editor. 
 
 ## Project Significance
 
@@ -28,6 +30,7 @@ Here is the link to documentation for the version of Jasmine we used (http://jas
 ## Attribution
 In this project I referenced the following sources: 
 * Udacity lessons
+* Udacity Forums
 * Jasmine website (http://jasmine.github.io/)
 * Stack Overflow
 * http://www.w3schools.com/
